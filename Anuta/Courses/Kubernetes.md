@@ -81,3 +81,22 @@ Config Map :
     3. Created outside Pods & Containers
     4. Makes Configurations portable and easy to manage
     5. Seperates configuration data from Pods
+
+*Secrets and Configurations are stored in ETCD a key-value datastore(database), max size for a Secret is 1 MB*
+
+7. Batch Execution :
+
+    1. Requires an executable/process to be run to completion. In K8S to run to completion jobs are primarily used for Batch Processing.
+    2. Each Job can create one or more pods.
+    3. If the Pod fails, Job controller will reschedule the container to another node.
+    4. Cn run multiple pods in parallel and can scale up if required.
+
+    5. Once the job is completed the pods will move from running state to shut-down state.
+
+8. Horizontal Scaling :
+
+Scale Up = To Create More replicas of the Containers
+Scale Down=To Destory the Containers that are not required
+
+Can be acheived by Commands, UIs and even automatic CPU usage by Configurations
+
