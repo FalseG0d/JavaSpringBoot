@@ -30,3 +30,17 @@ application.properties : To Add the properties that we want in the Project.
 @Autowired : Used to autowire bean on the setter method.
 
 Autowiring is a feature of Spring Framework that enables one to inject the Object Dependency implicitly. It internally uses setters or constructor injection.
+
+## Annotations
+
+@Autowired  : Used to inject the Object Dependency implicitly.
+
+@Data       : Bundles the features of @ToString , @EqualsAndHashCode , @Getter / @Setter and @RequiredArgsConstructor together.
+
+@Component  : Allows spring to automatically detect out Custom Beans.
+
+*Autowiring : To implicitly inject the Object Dependency.*
+
+@Scope      : To indicates the name of a scope to use for instances of the annotated type.
+
+@Qualifier  : Similar to @Autowired except this will search by Name over Class. We can give different names to the Classes by @Component("<name>")
