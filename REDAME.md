@@ -44,3 +44,4 @@ Autowiring is a feature of Spring Framework that enables one to inject the Objec
 @Scope      : To indicates the name of a scope to use for instances of the annotated type.
 
 @Qualifier  : Similar to @Autowired except this will search by Name over Class. We can give different names to the Classes by @Component("<name>")
+
