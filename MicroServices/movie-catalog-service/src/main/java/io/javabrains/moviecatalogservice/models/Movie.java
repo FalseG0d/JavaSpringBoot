@@ -12,6 +12,8 @@ public class Movie {
     public Movie(){
     }
 
+    // An Empty Constructor is required by Java to un-marshal something that is not an object to an object
+
     public Movie(String movieId, String movieName){
         this.movieId = movieId;
         this.movieName = movieName;
